@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ClientController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="536.0" prefWidth="640.0" style="-fx-background-color: gray;" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Client" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <ColorPicker fx:id="btnColor" layoutX="545.0" layoutY="15.0" prefHeight="25.0" prefWidth="141.0" />
+            <AnchorPane fx:id="pane" layoutX="14.0" layoutY="48.0" prefHeight="313.0" prefWidth="674.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="339.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="48.0" />
+            <ToggleButton fx:id="btnLine" layoutX="77.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="46.0" text="Line" />
+            <ToggleButton fx:id="btnRec" layoutX="123.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="46.0" text="Rec" />
+            <ToggleButton fx:id="btnCircle" layoutX="169.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="46.0" text="Circle" />
+            <TextField fx:id="sendText" layoutX="14.0" layoutY="380.0" prefHeight="25.0" prefWidth="509.0" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="177.0" />
+            <Button fx:id="btnSendText" layoutX="538.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Send Message" AnchorPane.bottomAnchor="295.0" AnchorPane.rightAnchor="14.0" />
+            <TextFlow fx:id="chatHistory" layoutX="13.0" layoutY="414.0" prefHeight="275.0" prefWidth="509.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="178.0" />
+            <ListView fx:id="peerList" layoutX="538.0" layoutY="414.0" prefHeight="275.0" prefWidth="148.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="14.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
